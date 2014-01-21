@@ -17,14 +17,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-wp-replace');
 ```
 
-## The "wp_replace" task
+## The "wpreplace" task
 
 ### Overview
-In your project's Gruntfile, add a section named `wp_replace` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `wpreplace` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  wp_replace: {
+  wpreplace: {
     options: {
       templatePath: '/wp-content/themes/your-theme/',
       jsPath: 'js-dist',
@@ -71,7 +71,7 @@ If you concat any files, define them in order to replace their replace, see the 
 Type: `Array`
 Default value: `[]`
 
-Array of Wordpress source file named with -src suffix, eg. footer-src.php or header-src.php.  The plugin will then generate footer.php and header.php with assets filename replaced.
+Array of Wordpress source file named with `-src` suffix, eg. footer-src.php or header-src.php.  The plugin will then generate footer.php and header.php with assets filename replaced.
 
 ### Usage Examples
 
