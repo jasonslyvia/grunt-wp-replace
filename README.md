@@ -27,8 +27,8 @@ grunt.initConfig({
   wp_replace: {
     options: {
       templatePath: '/wp-content/themes/your-theme/',
-      jsPath: '/wp-content/themes/your-theme/js-dist/',
-      cssPath: '/wp-content/themes/your-theme/css-dist/',
+      jsPath: 'js-dist',
+      cssPath: 'css-dist',
       concat: [{
         src: ['a.js', 'b.js'],
         dest: ['concated.js']
@@ -47,25 +47,31 @@ grunt.initConfig({
 Type: `String`
 Default value: `''`
 
-the template path of your wordpress theme
+The template path of your wordpress theme
 
 #### options.jsPath
 Type: `String`
 Default value: `''`
 
-the path which javascript files located in your wordpress theme
+The path which javascript files located in your wordpress theme, relative to `templatePath`
 
 #### options.cssPath
 Type: `String`
 Default value: `''`
 
-the path which css files located in your wordpress theme
+The path which css files located in your wordpress theme, relative to `templatePath`
 
 #### options.concat
 Type: `Array`
-Default value: `'.'`
+Default value: `[]`
 
-if you concat any files, define them in order to replace their replace, see the `Overview` part for format
+If you concat any files, define them in order to replace their replace, see the `Overview` part for format
+
+#### your_target.src
+Type: `Array`
+Default value: `[]`
+
+Array of Wordpress source file named with -src suffix, eg. footer-src.php or header-src.php.  The plugin will then generate footer.php and header.php with assets filename replaced.
 
 ### Usage Examples
 
