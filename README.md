@@ -1,3 +1,7 @@
+To better make use of this plugin, please refer [grunt-wordpress](https://github.com/jasonslyvia/grunt-wordpress) for how to make Grunt work for Wordpress development.
+
+为了更好的了解这个插件的功能，请参考[grunt-wordpress](http://undefinedblog.com/2014/01/grunt-wordpress/)一文。
+
 # grunt-wp-replace
 
 > Replace revved or concated filename for Wordpress source file.
