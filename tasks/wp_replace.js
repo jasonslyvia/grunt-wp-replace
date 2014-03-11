@@ -93,6 +93,7 @@ function replaceReference(content, regExp, type, filePath, revvedFiles, concat){
     if (revvedFiles.hasOwnProperty(asset)) {
 
       //判断其是否被concat
+      concat = concat || [];
       var concated = concat.every(function(el, i){
         //若被concat
         if(el.src.join(' ').indexOf(asset) !== -1){
